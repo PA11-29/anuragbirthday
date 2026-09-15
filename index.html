@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff8f4">
+<title>For Anurag ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@400;500;600&family=Sacramento&display=swap');
+:root{--cream:#fff9f5;--ink:#4b3d3a;--muted:#8c7974;--rose:#d58d92;--blush:#f4d9d5;--sage:#d5dfd4;--lav:#e5e0ef;--white:#fffdfb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}body.locked{overflow:hidden}
+button{font:inherit;color:inherit}.noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:60;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:55;overflow:hidden}.petal{position:absolute;top:-30px;width:9px;height:13px;background:#e9bfc1;border-radius:70% 30% 70% 30%;opacity:.55;animation:fall linear forwards}@keyframes fall{to{transform:translate3d(var(--x),110vh,0) rotate(430deg);opacity:0}}
+#intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#fffefc 0,#fff7f1 50%,#f3e6e0 100%);transition:opacity .9s,visibility .9s}#intro.hide{opacity:0;visibility:hidden}.intro{width:min(90vw,650px);padding:40px;text-align:center}.tiny{font-size:10px;text-transform:uppercase;letter-spacing:.28em;color:var(--muted)}.intro h1{font-family:"Playfair Display",serif;font-size:clamp(55px,10vw,92px);font-weight:400;line-height:.95;margin:22px 0}.script{font-family:Sacramento,cursive;color:var(--rose);font-size:1.1em}.intro p{max-width:490px;margin:0 auto 30px;color:var(--muted);line-height:1.8}.enter{background:#fff;border:1px solid #d9cbc7;border-radius:999px;padding:14px 25px;cursor:pointer;box-shadow:0 12px 35px #80655b14;transition:.3s}.enter:hover{transform:translateY(-3px)}
+section{min-height:100vh;padding:100px 7vw;display:grid;place-items:center;position:relative}.hero{text-align:center;background:radial-gradient(circle at 18% 30%,#e9e3f1 0,transparent 28%),radial-gradient(circle at 82% 70%,#f5d9d5 0,transparent 32%)}.hero-inner{max-width:900px}.eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.28em;color:var(--muted)}.hero h1,h2{font-family:"Playfair Display",serif;font-weight:400}.hero h1{font-size:clamp(60px,13vw,145px);line-height:.82;margin:20px 0}.hero h1 em{font-style:italic;color:var(--rose)}.lead{max-width:630px;margin:auto;color:var(--muted);line-height:1.85;font-size:17px}.scroll{position:absolute;bottom:32px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);animation:bob 2s infinite}@keyframes bob{50%{transform:translateY(8px)}}
+
+.chapter{background:#fbf6f1}.wrap{width:min(1120px,100%)}.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.split.reverse .visual{order:2}.visual{position:relative}.frame{background:#fff;padding:10px;box-shadow:0 20px 60px #644d451c;border-radius:25px}.frame img{width:100%;height:610px;object-fit:cover;border-radius:18px;display:block}.copy h2{font-size:clamp(43px,6vw,70px);line-height:1;margin:16px 0 24px}.copy h2 em{color:var(--rose);font-style:italic}.copy p{font-family:"Playfair Display",serif;font-size:clamp(20px,2.6vw,29px);line-height:1.65}.copy .small{font-family:"DM Sans",sans-serif;font-size:14px;color:var(--muted);line-height:1.8}.date{display:inline-block;margin-top:15px;padding:9px 14px;background:#fff;border-radius:999px;font-size:11px;letter-spacing:.1em;color:#9b7775}
+
+.baroda{background:linear-gradient(180deg,#fff9f5,#f3edf5)}.duo{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:45px}.duo .frame:nth-child(1){transform:rotate(-2deg)}.duo .frame:nth-child(2){transform:rotate(2deg);margin-top:45px}.duo img{height:420px}.baroda-copy{max-width:760px;text-align:center;margin:auto}.baroda-copy h2{font-size:clamp(45px,7vw,78px);line-height:1;margin:16px 0 25px}.baroda-copy p{font-family:"Playfair Display",serif;font-size:clamp(20px,2.5vw,28px);line-height:1.65}.baroda-copy strong{color:var(--rose);font-weight:500}
+
+.roka{background:#f2eee8}.roka-layout{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.roka-copy h2{font-size:clamp(43px,6vw,70px);line-height:1;margin:15px 0 25px}.roka-copy p{font-family:"Playfair Display",serif;font-size:23px;line-height:1.65}.roka-photo img{height:620px;object-fit:cover}.roka-note{font-size:12px!important;font-family:"DM Sans",sans-serif!important;color:var(--muted);line-height:1.7!important}
+
+.gallery{background:#fffaf7}.gallery-head{text-align:center;max-width:700px;margin:auto}.gallery h2{font-size:clamp(43px,7vw,78px);line-height:1;margin:15px 0}.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:38px;margin-top:55px}.memory{background:#fff;padding:11px 11px 27px;box-shadow:0 14px 38px #6a514818;transition:.45s}.memory:nth-child(2){transform:translateY(38px) rotate(1.5deg)}.memory:nth-child(3){transform:rotate(-1.5deg)}.memory:nth-child(4){transform:translateY(30px)}.memory:hover{transform:translateY(-8px) rotate(0)}.memory img{width:100%;height:470px;object-fit:cover;display:block}.memory p{font-family:Sacramento,cursive;font-size:31px;margin:12px 8px 0;color:#705b57}
+
+.reasons{background:#eaf0e9}.reasons-inner{width:min(960px,100%);text-align:center}.reasons h2{font-size:clamp(43px,7vw,78px);margin:15px 0}.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:50px}.card{min-height:170px;background:#fffaf8;border:0;border-radius:24px;padding:27px;text-align:left;cursor:pointer;box-shadow:0 9px 28px #4e604d0d;transition:.3s;position:relative}.card:hover{transform:translateY(-5px)}.front{font-family:"Playfair Display",serif;font-size:25px}.back{display:none;margin-top:13px;color:var(--muted);line-height:1.75}.card.open .back{display:block}.card.open .front{color:var(--rose)}.card small{position:absolute;right:17px;bottom:13px;color:#a1ada0;font-size:9px;letter-spacing:.16em;text-transform:uppercase}
+
+.inside{background:#f7e5e2}.inside-inner{width:min(850px,100%);text-align:center}.inside h2{font-size:clamp(43px,7vw,76px);margin:15px 0}.pills{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin:42px auto}.pill{background:#fffaf8;border-radius:999px;padding:12px 17px;color:#6d5a56;box-shadow:0 6px 17px #5f40390b}.quiz{background:#fff;border-radius:26px;padding:30px;box-shadow:0 18px 50px #66453e12}.quiz p:first-child{font-family:"Playfair Display",serif;font-size:24px}.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}.opt{border:1px solid #eadbd7;background:#fff;border-radius:14px;padding:12px;cursor:pointer}.result{min-height:25px;margin-top:14px;color:var(--rose)}
+
+.final{background:radial-gradient(circle at 50% 50%,#fff 0,#fffaf7 50%,#f5e5e1 100%);text-align:center}.final-inner{width:min(820px,100%)}.final h2{font-size:clamp(46px,8vw,86px);line-height:1;margin:15px 0 25px}.mystery{font-family:"Playfair Display",serif;font-size:22px;line-height:1.75;color:#705c57}.gift{width:145px;height:145px;border:0;border-radius:50%;background:#f3d9d6;margin:25px auto 30px;display:grid;place-items:center;font-size:54px;cursor:pointer;box-shadow:0 18px 45px #64453d1c;transition:.5s}.gift:hover{transform:scale(1.07) rotate(3deg)}.reveal{display:none}.reveal.show{display:block;animation:up .9s ease forwards}@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}.final-line{font-family:Sacramento,cursive;color:var(--rose);font-size:clamp(55px,9vw,95px);line-height:1.05;margin:25px 0}.signature{font-family:"Playfair Display",serif;font-style:italic;font-size:21px}.small{font-size:13px;color:var(--muted);line-height:1.8}
+.reveal-intro{font-family:"Playfair Display",serif;font-size:25px;line-height:1.6;margin:18px 0 25px}
+.reveal-photo-stack{max-width:520px;margin:0 auto;min-height:520px;display:grid;place-items:center}
+.reveal-photo{display:none;width:100%;animation:photoIn .9s ease forwards}
+.reveal-photo.active{display:block}
+.photo-frame{background:#fff;padding:10px;box-shadow:0 20px 55px #624b451f;transform:rotate(-1.5deg)}
+.reveal-photo:nth-child(2) .photo-frame{transform:rotate(1.5deg)}
+.reveal-photo:nth-child(3) .photo-frame{transform:rotate(-1deg)}
+.photo-frame img{width:100%;height:500px;object-fit:cover;display:block}
+.reveal-photo p{font-family:Sacramento,cursive;color:#705b57;font-size:31px;margin:15px 0}
+.next-memory{border:1px solid #ddc6c1;background:#fffaf8;border-radius:999px;padding:13px 22px;cursor:pointer;transition:.3s;margin:5px 0 45px}
+.next-memory:hover{transform:translateY(-3px);box-shadow:0 10px 25px #60443b12}
+.final-message{display:none;border-top:1px solid #ead9d5;padding-top:55px}
+.final-message.show{display:block;animation:up .9s ease forwards}
+@keyframes photoIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:none}}
+
+.footer{padding:60px 20px;text-align:center;background:#fff3ed;color:#99817b;font-size:11px;letter-spacing:.12em}
+
+@media(max-width:760px){section{padding:85px 22px}.split,.roka-layout{grid-template-columns:1fr;gap:35px}.split.reverse .visual{order:0}.frame img{height:500px}.duo,.gallery-grid,.cards{grid-template-columns:1fr}.duo .frame:nth-child(2),.memory:nth-child(2),.memory:nth-child(4){transform:none;margin-top:0}.duo img,.memory img{height:390px}.photo-frame img{height:410px}.reveal-photo-stack{min-height:440px}.opts{grid-template-columns:1fr}.roka-photo img{height:520px}}
+</style>
+</head>
+<body class="locked">
+<div class="noise"></div><div id="petals"></div>
+
+<div id="intro">
+  <div class="intro">
+    <div class="tiny">classified birthday file · access restricted</div>
+    <h1>For <span class="script">Anurag</span></h1>
+    <p>There is something here you should probably see.<br>It contains evidence, questionable decisions, and one very important conclusion.</p>
+    <button class="enter" id="enter">Unlock the file&nbsp; →</button>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">case file · 11 / 11 / 2025</div>
+    <h1>Happy Birthday,<br><em>Anurag.</em></h1>
+    <p class="lead">You thought this was going to be a birthday wish, didn't you?</p>
+    <p class="lead" style="margin-top:8px">Keep going.</p>
+  </div><div class="scroll">there are clues below ↓</div>
+</section>
+
+<section class="chapter">
+  <div class="wrap split">
+    <div class="visual frame"><img src="images/memory-1.jpeg" alt="A memory of us"></div>
+    <div class="copy">
+      <div class="eyebrow">chapter one · the long prequel</div>
+      <h2>We knew each other.<br><em>We just didn't know us.</em></h2>
+      <p>Nearly ten years of knowing the other person existed… and somehow never really talking.</p>
+      <p class="small">Then COVID happened. A message happened. I reached out. And suddenly, you were no longer just someone I knew.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter">
+  <div class="wrap split reverse">
+    <div class="visual frame"><img src="images/memory-2.jpeg" alt="A memory together"></div>
+    <div class="copy">
+      <div class="eyebrow">chapter two · the on-and-off era</div>
+      <h2>And then…<br><em>you were stupid.</em></h2>
+      <p>We talked. We stopped. We talked again. We stopped again.</p>
+      <p class="small">Mostly because of your stupidity, obviously. This website is committed to historical accuracy.</p>
+      <p class="small">But somewhere underneath all that chaos, something kept bringing us back to each other.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter">
+  <div class="wrap split">
+    <div class="visual frame"><img src="images/memory-3.jpeg" alt="A memory together"></div>
+    <div class="copy">
+      <div class="eyebrow">chapter three · July</div>
+      <h2>Then you finally<br><em>made yourself clear.</em></h2>
+      <p>You reached out last July and, for once, there was no ambiguity.</p>
+      <p>“I like you. I see a future with you. And if I get married, it is with you.”</p>
+      <p class="small">I, naturally, did not make this easy for you. I tested you. Teased you. Made you work for it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="baroda">
+  <div class="wrap">
+    <div class="baroda-copy">
+      <div class="eyebrow">chapter four · Baroda</div>
+      <h2>And then<br><em>you got your answer.</em></h2>
+      <div class="date">11 · 11 · 2025</div>
+      <p>I finally gave in.</p>
+      <p>And because Delhi and Jamnagar aren't exactly next door, we went to Baroda to meet.</p>
+      <p>That trip is where things stopped being a possibility and became <strong>ours.</strong></p>
+      <p>And somewhere in Baroda, we shared our first kiss.</p>
+      <p>That one is staying between us. ♡</p>
+    </div>
+    <div class="duo">
+      <div class="frame"><img src="images/memory-4.jpeg" alt="A memory together"></div>
+      <div class="frame"><img src="images/memory-5.jpeg" alt="A memory together"></div>
+    </div>
+  </div>
+</section>
+
+<section class="roka">
+  <div class="wrap roka-layout">
+    <div class="roka-copy">
+      <div class="eyebrow">chapter five · a little more official</div>
+      <h2>The Roka.</h2>
+      <p>A beautiful little milestone in the story we're writing together.</p>
+      <p>A day that felt like two lives becoming a little more intertwined, surrounded by the people we love.</p>
+      <p class="roka-note">One of those days I'll always look back on and smile — because it was another step toward our forever.</p>
+    </div>
+    <div class="roka-photo frame"><img src="images/memory-6.jpeg" alt="Our Roka ceremony"></div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="gallery-head">
+      <div class="eyebrow">chapter six · little pieces of us</div>
+      <h2>The memories that<br><em>made their way here.</em></h2>
+      <p class="lead">Not everything needs to be shown at once. Some memories are better when they arrive slowly.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="memory"><img src="images/memory-7.jpeg" alt="A memory together"><p>the soft moments</p></div>
+      <div class="memory"><img src="images/memory-8.jpeg" alt="A memory together"><p>you, being you</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reasons">
+  <div class="reasons-inner">
+    <div class="eyebrow">chapter seven · reasons</div>
+    <h2>Things I love about you.</h2>
+    <p class="lead">Open the files. I promise there are no pronunciation corrections in these ones.</p>
+    <div class="cards">
+      <button class="card"><div class="front">Your voice.</div><div class="back">There is something about hearing you that can make an ordinary moment feel like my favourite place to be.</div><small>open file</small></button>
+      <button class="card"><div class="front">That brain of yours.</div><div class="back">Your problem-solving skills are one of my favourite things about you. You make difficult things feel solvable.</div><small>open file</small></button>
+      <button class="card"><div class="front">You take a stand for me.</div><div class="back">Knowing that you will stand beside me when it matters means more to me than I probably say.</div><small>open file</small></button>
+      <button class="card"><div class="front">You do things for me.</div><div class="back">The little efforts. The big efforts. The “I'll figure it out” energy. I notice all of it, baby.</div><small>open file</small></button>
+    </div>
+  </div>
+</section>
+
+<section class="inside">
+  <div class="inside-inner">
+    <div class="eyebrow">chapter eight · highly classified</div>
+    <h2>Things that are aggressively us.</h2>
+    <div class="pills">
+      <div class="pill">Me correcting “lounge”</div>
+      <div class="pill">Me correcting “airport”</div>
+      <div class="pill">Our dark humour</div>
+      <div class="pill">Calling each other “baby”</div>
+      <div class="pill">You pretending not to be annoyed</div>
+      <div class="pill">Me being right, naturally</div>
+    </div>
+    <div class="quiz">
+      <div class="eyebrow">final verification</div>
+      <p>Who is more likely to correct the pronunciation of an innocent word?</p>
+      <div class="opts">
+        <button class="opt" data-a="yes">Me. Obviously.</button>
+        <button class="opt" data-a="no">Anurag. (be serious)</button>
+      </div>
+      <div class="result" id="result"></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="final-inner">
+    <div class="eyebrow">final file · open when ready</div>
+    <h2>You've reached the end.</h2>
+    <p class="mystery">Or at least, you thought you had.</p>
+    <p class="mystery">There are still a few memories waiting for you.</p>
+    <button class="gift" id="gift" aria-label="Open final reveal">🎁</button>
+
+    <div class="reveal" id="reveal">
+      <div class="eyebrow">CONFIDENTIAL RESULT</div>
+      <p class="reveal-intro">Okay, baby. One last thing…</p>
+
+      <div class="reveal-photo-stack" id="reveal-stack">
+        <div class="reveal-photo" data-photo="1">
+          <div class="photo-frame"><img src="images/memory-9.jpeg" alt="A memory together"></div>
+          <p>And somehow, the ordinary became my favourite.</p>
+        </div>
+        <div class="reveal-photo" data-photo="2">
+          <div class="photo-frame"><img src="images/memory-10.jpeg" alt="A memory together"></div>
+          <p>Different days. Same person I want beside me.</p>
+        </div>
+        <div class="reveal-photo" data-photo="3">
+          <div class="photo-frame"><img src="images/memory-11.jpeg" alt="A memory together"></div>
+          <p>And then there is… us. ♡</p>
+        </div>
+      </div>
+
+      <button class="next-memory" id="next-memory">Show me another ♡</button>
+
+      <div class="final-message" id="final-message">
+        <div class="eyebrow">FINAL VERDICT</div>
+        <h2>Case closed.</h2>
+        <p class="mystery">After extensive investigation, repeated testing, and absolutely no scientific rigour whatsoever…</p>
+        <div class="final-line">Your life is going to be so much better from now on.</div>
+        <p class="signature">Because I'm in it. ♡</p>
+        <p class="small">Happy Birthday, baby.<br>I love you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">made with unreasonable amounts of love · for Anurag ♡</div>
+</main>
+
+<script>
+const intro=document.getElementById('intro');
+let audioCtx;
+
+function unlockAudio(){
+  try{
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if(audioCtx.state === 'suspended') audioCtx.resume();
+  }catch(e){}
+}
+
+function clickSound(kind='soft'){
+  if(!audioCtx) return;
+  const now=audioCtx.currentTime;
+  const o=audioCtx.createOscillator();
+  const g=audioCtx.createGain();
+  o.connect(g); g.connect(audioCtx.destination);
+  o.type='sine';
+  if(kind==='unlock'){
+    o.frequency.setValueAtTime(392,now);
+    o.frequency.exponentialRampToValueAtTime(659,now+.22);
+  }else if(kind==='reveal'){
+    o.frequency.setValueAtTime(523,now);
+    o.frequency.exponentialRampToValueAtTime(784,now+.25);
+  }else{
+    o.frequency.setValueAtTime(440,now);
+    o.frequency.exponentialRampToValueAtTime(520,now+.12);
+  }
+  g.gain.setValueAtTime(.0001,now);
+  g.gain.exponentialRampToValueAtTime(.12,now+.015);
+  g.gain.exponentialRampToValueAtTime(.0001,now+.45);
+  o.start(now); o.stop(now+.46);
+}
+
+document.getElementById('enter').onclick=()=>{
+  unlockAudio();
+  clickSound('unlock');
+  intro.classList.add('hide');
+  document.body.classList.remove('locked');
+  petals(18);
+  setTimeout(()=>document.querySelector('.hero').scrollIntoView({behavior:'smooth'}),350);
+};
+
+document.querySelectorAll('.card').forEach(c=>c.onclick=()=>{
+  c.classList.toggle('open');
+  unlockAudio();
+  clickSound();
+});
+
+document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+  document.getElementById('result').textContent=b.dataset.a==='yes'
+    ? 'Correct. Case closed. 😌'
+    : 'Interesting theory. The evidence is not on your side. 😂';
+  unlockAudio(); clickSound();
+});
+
+const reveal=document.getElementById('reveal');
+const gift=document.getElementById('gift');
+const nextMemory=document.getElementById('next-memory');
+const photos=[...document.querySelectorAll('.reveal-photo')];
+const finalMessage=document.getElementById('final-message');
+let current=0;
+
+gift.onclick=()=>{
+  unlockAudio();
+  clickSound('reveal');
+  gift.style.display='none';
+  reveal.classList.add('show');
+  photos[0].classList.add('active');
+  petals(45);
+};
+
+nextMemory.onclick=()=>{
+  unlockAudio();
+  clickSound('soft');
+  if(current < photos.length-1){
+    photos[current].classList.remove('active');
+    current++;
+    photos[current].classList.add('active');
+    if(current === photos.length-1) nextMemory.textContent='Okay… show me the verdict ♡';
+  }else{
+    nextMemory.style.display='none';
+    finalMessage.classList.add('show');
+    clickSound('reveal');
+    petals(70);
+  }
+};
+
+function petals(n){
+  const box=document.getElementById('petals');
+  for(let i=0;i<n;i++){
+    let p=document.createElement('span');
+    p.className='petal';
+    p.style.left=Math.random()*100+'vw';
+    p.style.setProperty('--x',(Math.random()*240-120)+'px');
+    p.style.animationDuration=(4+Math.random()*5)+'s';
+    p.style.animationDelay=Math.random()*1.2+'s';
+    box.appendChild(p);
+    setTimeout(()=>p.remove(),11000);
+  }
+}
+setInterval(()=>petals(2),2000);
+</script>
+</body>
+</html>
